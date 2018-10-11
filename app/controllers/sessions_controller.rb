@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
         if session[:name] == nil || session[:name].empty?
           redirect_to login_path
         else
-          redirect_to '/secrets/show'
+          render '/secrets/show'
         end
     end
     
